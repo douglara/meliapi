@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mercadolibre.com/users/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '97'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 20 Feb 2021 02:27:29 GMT
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - d7a98edd-3321-484f-bedf-f73fdcc728ef
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - PUT, GET, POST, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 7894243d20a2d3e6d9705f4507e0ee8d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - GRU3-C2
+      X-Amz-Cf-Id:
+      - nyZAJlVRCJA1k62NiEeP5ot6QbOPZ3Rimn1LTmwrUSbyQeQJZmzByA==
+    body:
+      encoding: UTF-8
+      string: '{"message":"The User ID must match the consultant''s","error":"forbidden","status":403,"cause":[]}'
+  recorded_at: Sat, 20 Feb 2021 02:27:30 GMT
+recorded_with: VCR 6.0.0

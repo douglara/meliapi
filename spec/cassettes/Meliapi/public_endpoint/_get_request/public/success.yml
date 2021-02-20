@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mercadolibre.com/sites/MLB
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1823'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 20 Feb 2021 01:38:51 GMT
+      Cache-Control:
+      - max-age=86400,stale-while-revalidate=43200, stale-if-error=172800
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - 71eacd60-42f8-46b2-acff-bec3b1df00aa
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - PUT, GET, POST, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 20258a2b3c6766e357360ce1a55204c9.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - GRU3-C2
+      X-Amz-Cf-Id:
+      - L9xszC_0Pou9-tKk2WU1ve_cEpmhVXq5d80v0i558WO9yPgg7owadA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6Ik1MQiIsIm5hbWUiOiJCcmFzaWwiLCJjb3VudHJ5X2lkIjoiQlIiLCJzYWxlX2ZlZXNfbW9kZSI6Im5vdF9mcmVlIiwibWVyY2Fkb3BhZ29fdmVyc2lvbiI6MywiZGVmYXVsdF9jdXJyZW5jeV9pZCI6IkJSTCIsImltbWVkaWF0ZV9wYXltZW50Ijoib3B0aW9uYWwiLCJwYXltZW50X21ldGhvZF9pZHMiOlsiTUxCTVAiLCJNTEJXQyIsIk1MQk1PIiwiTUxCQkMiLCJNTEJDQyIsIk1MQkRFIiwiTUxCQ0QiLCJNTEJPVSJdLCJzZXR0aW5ncyI6eyJpZGVudGlmaWNhdGlvbl90eXBlcyI6WyJDUEYiLCJDTlBKIiwiQ1JFQ0kiXSwidGF4cGF5ZXJfdHlwZXMiOltdLCJpZGVudGlmaWNhdGlvbl90eXBlc19ydWxlcyI6bnVsbH0sImN1cnJlbmNpZXMiOlt7ImlkIjoiQlJMIiwic3ltYm9sIjoiUiQifV0sImNhdGVnb3JpZXMiOlt7ImlkIjoiTUxCNTY3MiIsIm5hbWUiOiJBY2Vzc8OzcmlvcyBwYXJhIFZlw61jdWxvcyJ9LHsiaWQiOiJNTEIyNzE1OTkiLCJuYW1lIjoiQWdybyJ9LHsiaWQiOiJNTEIxNDAzIiwibmFtZSI6IkFsaW1lbnRvcyBlIEJlYmlkYXMifSx7ImlkIjoiTUxCMTA3MSIsIm5hbWUiOiJBbmltYWlzIn0seyJpZCI6Ik1MQjEzNjciLCJuYW1lIjoiQW50aWd1aWRhZGVzIGUgQ29sZcOnw7VlcyJ9LHsiaWQiOiJNTEIxMzY4IiwibmFtZSI6IkFydGUsIFBhcGVsYXJpYSBlIEFybWFyaW5obyJ9LHsiaWQiOiJNTEIxMzg0IiwibmFtZSI6IkJlYsOqcyJ9LHsiaWQiOiJNTEIxMjQ2IiwibmFtZSI6IkJlbGV6YSBlIEN1aWRhZG8gUGVzc29hbCJ9LHsiaWQiOiJNTEIxMTMyIiwibmFtZSI6IkJyaW5xdWVkb3MgZSBIb2JiaWVzIn0seyJpZCI6Ik1MQjE0MzAiLCJuYW1lIjoiQ2Fsw6dhZG9zLCBSb3VwYXMgZSBCb2xzYXMifSx7ImlkIjoiTUxCMTAzOSIsIm5hbWUiOiJDw6JtZXJhcyBlIEFjZXNzw7NyaW9zIn0seyJpZCI6Ik1MQjE3NDMiLCJuYW1lIjoiQ2Fycm9zLCBNb3RvcyBlIE91dHJvcyJ9LHsiaWQiOiJNTEIxNTc0IiwibmFtZSI6IkNhc2EsIE3Ds3ZlaXMgZSBEZWNvcmHDp8OjbyJ9LHsiaWQiOiJNTEIxMDUxIiwibmFtZSI6IkNlbHVsYXJlcyBlIFRlbGVmb25lcyJ9LHsiaWQiOiJNTEI1NzI2IiwibmFtZSI6IkVsZXRyb2RvbcOpc3RpY29zIn0seyJpZCI6Ik1MQjEwMDAiLCJuYW1lIjoiRWxldHLDtG5pY29zLCDDgXVkaW8gZSBWw61kZW8ifSx7ImlkIjoiTUxCMTI3NiIsIm5hbWUiOiJFc3BvcnRlcyBlIEZpdG5lc3MifSx7ImlkIjoiTUxCMjYzNTMyIiwibmFtZSI6IkZlcnJhbWVudGFzIGUgQ29uc3RydcOnw6NvIn0seyJpZCI6Ik1MQjEyNDA0IiwibmFtZSI6IkZlc3RhcyBlIExlbWJyYW5jaW5oYXMifSx7ImlkIjoiTUxCMTE0NCIsIm5hbWUiOiJHYW1lcyJ9LHsiaWQiOiJNTEIxNDU5IiwibmFtZSI6Ikltw7N2ZWlzIn0seyJpZCI6Ik1MQjE0OTkiLCJuYW1lIjoiSW5kw7pzdHJpYSBlIENvbcOpcmNpbyJ9LHsiaWQiOiJNTEIxNjQ4IiwibmFtZSI6IkluZm9ybcOhdGljYSJ9LHsiaWQiOiJNTEIyMTg1MTkiLCJuYW1lIjoiSW5ncmVzc29zIn0seyJpZCI6Ik1MQjExODIiLCJuYW1lIjoiSW5zdHJ1bWVudG9zIE11c2ljYWlzIn0seyJpZCI6Ik1MQjM5MzciLCJuYW1lIjoiSm9pYXMgZSBSZWzDs2dpb3MifSx7ImlkIjoiTUxCMTE5NiIsIm5hbWUiOiJMaXZyb3MsIFJldmlzdGFzIGUgQ29taWNzIn0seyJpZCI6Ik1MQjExNjgiLCJuYW1lIjoiTcO6c2ljYSwgRmlsbWVzIGUgU2VyaWFkb3MifSx7ImlkIjoiTUxCMjY0NTg2IiwibmFtZSI6IlNhw7pkZSJ9LHsiaWQiOiJNTEIxNTQwIiwibmFtZSI6IlNlcnZpw6dvcyJ9LHsiaWQiOiJNTEIxOTUzIiwibmFtZSI6Ik1haXMgQ2F0ZWdvcmlhcyJ9XX0=
+  recorded_at: Sat, 20 Feb 2021 01:38:51 GMT
+recorded_with: VCR 6.0.0

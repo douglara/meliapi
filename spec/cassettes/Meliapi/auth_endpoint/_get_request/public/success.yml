@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mercadolibre.com/users/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 20 Feb 2021 02:42:50 GMT
+      Cache-Control:
+      - max-age=60,stale-while-revalidate=30, stale-if-error=120
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - cd30612b-bfc5-40e5-9922-4983d0f668ca
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - PUT, GET, POST, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f73b010838a44ddb3d7ec843a071c1cf.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - GRU3-C2
+      X-Amz-Cf-Id:
+      - cVW7ZmHvLLap20rM4bk5PM6GvoejdMjJJBM6Td17-xJdZeesREk0wA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6MTEwNjY2NDkyLCJuaWNrbmFtZSI6IkRPVUxBUkEyMDEyIiwicmVnaXN0cmF0aW9uX2RhdGUiOiIyMDEyLTA0LTI2VDEzOjU4OjI0LjAwMC0wNDowMCIsImZpcnN0X25hbWUiOiJEb3VnbGFzIiwibGFzdF9uYW1lIjoiTGFyYSIsImdlbmRlciI6IiIsImNvdW50cnlfaWQiOiJCUiIsImVtYWlsIjoiZG91Z2xhc19sYXJhQG1lLmNvbSIsImlkZW50aWZpY2F0aW9uIjp7Im51bWJlciI6IjA5MDM4NjEzOTk3IiwidHlwZSI6IkNQRiJ9LCJpbnRlcm5hbF90YWdzIjpbImNhY19tZTJfZHJvcF9vZmYiLCJkZXZlbG9wZXIiXSwiYWRkcmVzcyI6eyJhZGRyZXNzIjoiUnVhIE1hcmlhbHZhIDcwIiwiY2l0eSI6IkN1cml0aWJhIiwic3RhdGUiOiJCUi1QUiIsInppcF9jb2RlIjoiODE5MDA1MDAifSwicGhvbmUiOnsiYXJlYV9jb2RlIjpudWxsLCJleHRlbnNpb24iOiIiLCJudW1iZXIiOiI0MTk5NjkxMDI1NiIsInZlcmlmaWVkIjpmYWxzZX0sImFsdGVybmF0aXZlX3Bob25lIjp7ImFyZWFfY29kZSI6IiIsImV4dGVuc2lvbiI6IiIsIm51bWJlciI6IiJ9LCJ1c2VyX3R5cGUiOiJub3JtYWwiLCJ0YWdzIjpbIm5vcm1hbCIsIm1lc3NhZ2VzX2FzX3NlbGxlciIsIm1lc3NhZ2VzX2FzX2J1eWVyIl0sImxvZ28iOm51bGwsInBvaW50cyI6MTA0LCJzaXRlX2lkIjoiTUxCIiwicGVybWFsaW5rIjoiaHR0cDovL3BlcmZpbC5tZXJjYWRvbGl2cmUuY29tLmJyL0RPVUxBUkEyMDEyIiwic2hpcHBpbmdfbW9kZXMiOlsiY3VzdG9tIiwibm90X3NwZWNpZmllZCIsIm1lMiJdLCJzZWxsZXJfZXhwZXJpZW5jZSI6IkFEVkFOQ0VEIiwiYmlsbF9kYXRhIjp7ImFjY2VwdF9jcmVkaXRfbm90ZSI6bnVsbH0sInNlbGxlcl9yZXB1dGF0aW9uIjp7ImxldmVsX2lkIjpudWxsLCJwb3dlcl9zZWxsZXJfc3RhdHVzIjpudWxsLCJ0cmFuc2FjdGlvbnMiOnsiY2FuY2VsZWQiOjMsImNvbXBsZXRlZCI6NCwicGVyaW9kIjoiaGlzdG9yaWMiLCJyYXRpbmdzIjp7Im5lZ2F0aXZlIjowLCJuZXV0cmFsIjowLCJwb3NpdGl2ZSI6MX0sInRvdGFsIjo3fSwibWV0cmljcyI6eyJzYWxlcyI6eyJwZXJpb2QiOiIzNjUgZGF5cyIsImNvbXBsZXRlZCI6NH0sImNsYWltcyI6eyJwZXJpb2QiOiIzNjUgZGF5cyIsInJhdGUiOjAsInZhbHVlIjowfSwiZGVsYXllZF9oYW5kbGluZ190aW1lIjp7InBlcmlvZCI6IjM2NSBkYXlzIiwicmF0ZSI6MCwidmFsdWUiOjB9LCJjYW5jZWxsYXRpb25zIjp7InBlcmlvZCI6IjM2NSBkYXlzIiwicmF0ZSI6MCwidmFsdWUiOjJ9fX0sImJ1eWVyX3JlcHV0YXRpb24iOnsiY2FuY2VsZWRfdHJhbnNhY3Rpb25zIjowLCJ0YWdzIjpbXSwidHJhbnNhY3Rpb25zIjp7ImNhbmNlbGVkIjp7InBhaWQiOm51bGwsInRvdGFsIjpudWxsfSwiY29tcGxldGVkIjpudWxsLCJub3RfeWV0X3JhdGVkIjp7InBhaWQiOm51bGwsInRvdGFsIjpudWxsLCJ1bml0cyI6bnVsbH0sInBlcmlvZCI6Imhpc3RvcmljIiwidG90YWwiOm51bGwsInVucmF0ZWQiOnsicGFpZCI6bnVsbCwidG90YWwiOm51bGx9fX0sInN0YXR1cyI6eyJiaWxsaW5nIjp7ImFsbG93Ijp0cnVlLCJjb2RlcyI6W119LCJidXkiOnsiYWxsb3ciOnRydWUsImNvZGVzIjpbXSwiaW1tZWRpYXRlX3BheW1lbnQiOnsicmVhc29ucyI6W10sInJlcXVpcmVkIjpmYWxzZX19LCJjb25maXJtZWRfZW1haWwiOnRydWUsInNob3BwaW5nX2NhcnQiOnsiYnV5IjoiYWxsb3dlZCIsInNlbGwiOiJhbGxvd2VkIn0sImltbWVkaWF0ZV9wYXltZW50IjpmYWxzZSwibGlzdCI6eyJhbGxvdyI6dHJ1ZSwiY29kZXMiOltdLCJpbW1lZGlhdGVfcGF5bWVudCI6eyJyZWFzb25zIjpbXSwicmVxdWlyZWQiOmZhbHNlfX0sIm1lcmNhZG9lbnZpb3MiOiJub3RfYWNjZXB0ZWQiLCJtZXJjYWRvcGFnb19hY2NvdW50X3R5cGUiOiJwZXJzb25hbCIsIm1lcmNhZG9wYWdvX3RjX2FjY2VwdGVkIjp0cnVlLCJyZXF1aXJlZF9hY3Rpb24iOm51bGwsInNlbGwiOnsiYWxsb3ciOnRydWUsImNvZGVzIjpbXSwiaW1tZWRpYXRlX3BheW1lbnQiOnsicmVhc29ucyI6W10sInJlcXVpcmVkIjpmYWxzZX19LCJzaXRlX3N0YXR1cyI6ImFjdGl2ZSIsInVzZXJfdHlwZSI6ImNvbXBsZXRlX3JlZ2lzdHJhdGlvbiJ9LCJzZWN1cmVfZW1haWwiOiJkbGFyYS4zdG55ZDFAbWFpbC5tZXJjYWRvbGl2cmUuY29tIiwiY29tcGFueSI6eyJicmFuZF9uYW1lIjoiTWVsaSBBbsO6bmNpb3MiLCJjaXR5X3RheF9pZCI6IiIsImNvcnBvcmF0ZV9uYW1lIjoidGVzdGVlIiwiaWRlbnRpZmljYXRpb24iOiIwOTAzODYxMzk5NyIsInN0YXRlX3RheF9pZCI6IiIsImN1c3RfdHlwZV9pZCI6IkNPIiwic29mdF9kZXNjcmlwdG9yIjoiTUVMSUFOVU5DSU9TIn0sImNyZWRpdCI6eyJjb25zdW1lZCI6MCwiY3JlZGl0X2xldmVsX2lkIjoiTUxCMyIsInJhbmsiOiJwYXllciJ9LCJjb250ZXh0Ijp7fSwicmVnaXN0cmF0aW9uX2lkZW50aWZpZXJzIjpbXX0=
+  recorded_at: Sat, 20 Feb 2021 02:42:50 GMT
+recorded_with: VCR 6.0.0
