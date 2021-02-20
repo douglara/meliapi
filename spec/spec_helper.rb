@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-require "meliapi"
+require_relative "../lib/meliapi"
+Dir[File.expand_path("../support/**/*.rb", __FILE__)].each { |rb| require(rb) }
+require 'dotenv/load'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
