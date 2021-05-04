@@ -25,7 +25,7 @@ class Meliapi
 
     begin
       retries ||= 0
-      request = Faraday.post "#{@endpoint_url}/#{action}", params, headers
+      request = Faraday.post "#{@endpoint_url}/#{action}", params.to_json, headers
       return {error: (JSON.parse(request.body) rescue request.body), request: request} if (request.status == 403)
       return {ok: (JSON.parse(request.body) rescue request.body), request: request}
     rescue Exception => e
@@ -42,7 +42,7 @@ class Meliapi
 
     begin
       retries ||= 0
-      request = Faraday.put "#{@endpoint_url}/#{action}", params, headers
+      request = Faraday.put "#{@endpoint_url}/#{action}", params.to_json, headers
       return {error: (JSON.parse(request.body) rescue request.body), request: request} if (request.status == 403)
       return {ok: (JSON.parse(request.body) rescue request.body), request: request}
     rescue Exception => e
@@ -59,7 +59,7 @@ class Meliapi
 
     begin
       retries ||= 0
-      request = Faraday.patch "#{@endpoint_url}/#{action}", params, headers
+      request = Faraday.patch "#{@endpoint_url}/#{action}", params.to_json, headers
       return {error: (JSON.parse(request.body) rescue request.body), request: request} if (request.status == 403)
       return {ok: (JSON.parse(request.body) rescue request.body), request: request}
     rescue Exception => e
