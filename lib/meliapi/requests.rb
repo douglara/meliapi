@@ -4,7 +4,7 @@ require 'faraday'
 
 class Meliapi
   def get_request(action, params={}, headers={})
-    headers = headers.merge({'Authorization': "Bearer #{@access_token}"}) unless @access_token.nil?
+    headers = make_headers(headers)
 
     begin
       retries ||= 0
@@ -21,7 +21,7 @@ class Meliapi
   end
 
   def post_request(action, params={}, headers={})
-    headers = headers.merge({'Authorization': "Bearer #{@access_token}"}) unless @access_token.nil?
+    headers = make_headers(headers)
 
     begin
       retries ||= 0
@@ -38,7 +38,7 @@ class Meliapi
   end
 
   def put_request(action, params={}, headers={})
-    headers = headers.merge({'Authorization': "Bearer #{@access_token}"}) unless @access_token.nil?
+    headers = make_headers(headers)
 
     begin
       retries ||= 0
@@ -55,7 +55,7 @@ class Meliapi
   end
 
   def path_request(action, params={}, headers={})
-    headers = headers.merge({'Authorization': "Bearer #{@access_token}"}) unless @access_token.nil?
+    headers = make_headers(headers)
 
     begin
       retries ||= 0
@@ -72,7 +72,7 @@ class Meliapi
   end
 
   def delete_request(action, params={}, headers={})
-    headers = headers.merge({'Authorization': "Bearer #{@access_token}"}) unless @access_token.nil?
+    headers = make_headers(headers)
 
     begin
       retries ||= 0
@@ -87,4 +87,11 @@ class Meliapi
       return {error: e}
     end
   end
+
+  private
+
+  def make_headers(headers)
+    headers.merge({ 'Authorization': "Bearer #{@access_token}", 'Content-Type': "application/json" })
+  end
+
 end
